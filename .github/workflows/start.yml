@@ -1,0 +1,4 @@
+# This will just say "Hello World"
+echo "Hello World"
+# This will show you more commands
+help
