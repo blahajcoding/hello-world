@@ -1,0 +1,22 @@
+name: Gitdub Datcionz
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Hi there running...
+        run: echo Hello, world!
+        
+      - name: Tell me commandz
+        run: help
+        
