@@ -1,0 +1,18 @@
+name: Testing GitHub Actions
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+      - name: Say Hello!
+        run: echo Hello there!
+
+      - name: temp
+        run: echo This is sponsored by Raid Shadow Legends
+          
