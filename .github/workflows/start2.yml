@@ -1,0 +1,4 @@
+# This says "Hello World"
+echo "Hello World"
+# Shows more Linux commands
+help
