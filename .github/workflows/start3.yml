@@ -1,0 +1,19 @@
+name: Testing GitHub Actions
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+      - name: Say Hello!
+        run: echo Hello there!
+
+      - name: temp
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
