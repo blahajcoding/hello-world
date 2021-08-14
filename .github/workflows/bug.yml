@@ -1,0 +1,21 @@
+name: Gitdub Datcionz
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Sudo Apt
+        run:  sudo apt install neofetch
+
+      - name: Neofetch
+        run:  neofetch --ascii_distro -windows10
